@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog Grids | Base - Tailwind CSS Startup Template</title>
+    <title>Blog & Berita Terbaru</title>
   <link rel="icon" href="favicon.ico"><link href="style.css" rel="stylesheet"></head>
   <body
     x-data="{ page: 'blog-grid', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
@@ -23,7 +23,7 @@
     <div class="vd to/4 tc wf yf">
       <a href="index.html">
         <img class="om" src="images/logo-light.svg" alt="Logo Light" />
-        <img class="xc nm" src="images/logo-dark.svg" alt="Logo Dark" />
+        <img class="xc nm" src="images/logo-light.svg" alt="Logo Dark" />
       </a>
 
       <!-- Hamburger Toggle BTN -->
@@ -47,39 +47,14 @@
       class="vd wo/4 sd qo f ho oo wf yf"
       :class="{ 'd hh rm sr td ud qg ug jc yh': navigationOpen }"
     >
-      <nav>
-        <ul class="tc _o sf yo cg ep">
-          <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }">Home</a></li>
-          <li><a href="index.html#features" class="xl">Features</a></li>
-          <li class="c i" x-data="{ dropdown: false }">
-            <a
-              href="#"
-              class="xl tc wf yf bg"
-              @click.prevent="dropdown = !dropdown"
-              :class="{ 'mk': page === 'blog-grid' || page === 'blog-single' || page === 'signin' || page === 'signup' || page === '404' }"
-            >
-              Pages
-
-              <svg
-              :class="{ 'wh': dropdown }"
-              class="th mm we fd pf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
-              </svg>
-            </a>
-
-            <!-- Dropdown Start -->
-            <ul class="a" :class="{ 'tc': dropdown }">
-              <li><a href="blog-grid.html" class="xl" :class="{ 'mk': page === 'blog-grid' }">Blog Grid</a></li>
-              <li><a href="blog-single.html" class="xl" :class="{ 'mk': page === 'blog-single' }">Blog Single</a></li>
-              <li><a href="signin.html" class="xl" :class="{ 'mk': page === 'signin' }">Sign In</a></li>
-              <li><a href="signup.html" class="xl" :class="{ 'mk': page === 'signup' }">Sign Up</a></li>
-              <li><a href="404.html" class="xl" :class="{ 'mk': page === '404' }">404</a></li>
-            </ul>
-            <!-- Dropdown End -->
-          </li>
-          <li><a href="index.html#support" class="xl">Support</a></li>
-        </ul>
-      </nav>
+    <nav>
+      <ul class="tc _o sf yo cg ep">
+        <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }">Home</a></li>
+        <li><a href="index.html#features" class="xl">Features</a></li>
+        <li><a href="blog-grid.html" class="xl" :class="{ 'mk': page === 'blog-grid' }">Blog</a></li>
+        <li><a href="index.html#support" class="xl">Support</a></li>
+      </ul>
+    </nav>
 
       <div class="tc wf ig pb no">
         <div class="pc h io pa ra" :class="navigationOpen ? '!-ud-visible' : 'd'">
@@ -108,8 +83,8 @@
       <section class="ji gp uq">
         <div class="bb ye ki xn vq jb jo">
           <div class="wc qf pn xo zf iq">
-            <!-- Blog Item -->
-            <div class="animate_top sg vk rm xm">
+             <!-- Blog Item -->
+             <div class="animate_top sg vk rm xm">
               <div class="c rc i z-1 pg">
                 <img class="w-full" src="images/blog-01.png" alt="Blog" />
 
@@ -126,15 +101,15 @@
                 <div class="tc uf wf ag jq">
                   <div class="tc wf ag">
                     <img src="images/icon-man.svg" alt="User" />
-                    <p>Musharof Chy</p>
+                    <p>Febri Seventin</p>
                   </div>
                   <div class="tc wf ag">
                     <img src="images/icon-calender.svg" alt="Calender" />
-                    <p>25 Dec, 2025</p>
+                    <p>30 Juli, 2024</p>
                   </div>
                 </div>
                 <h4 class="ek tj ml il kk wm xl eq lb">
-                  <a href="blog-single.html">Free advertising for your online business</a>
+                  <a href="blog-single.html">10 Tips Agar Wi-Fi Lancar Terus di Rumah Kamu</a>
                 </h4>
               </div>
             </div>
@@ -157,15 +132,15 @@
                 <div class="tc uf wf ag jq">
                   <div class="tc wf ag">
                     <img src="images/icon-man.svg" alt="User" />
-                    <p>Musharof Chy</p>
+                    <p>Febri Seventin</p>
                   </div>
                   <div class="tc wf ag">
                     <img src="images/icon-calender.svg" alt="Calender" />
-                    <p>25 Dec, 2025</p>
+                    <p>30 Juli, 2024</p>
                   </div>
                 </div>
                 <h4 class="ek tj ml il kk wm xl eq lb">
-                  <a href="blog-single.html">9 simple ways to improve your design skills</a>
+                  <a href="blog-single.html">Ini Cara Melihat Pengguna WiFi IndiHome Kita</a>
                 </h4>
               </div>
             </div>
@@ -188,112 +163,20 @@
                 <div class="tc uf wf ag jq">
                   <div class="tc wf ag">
                     <img src="images/icon-man.svg" alt="User" />
-                    <p>Musharof Chy</p>
+                    <p>Febri Seventin</p>
                   </div>
                   <div class="tc wf ag">
                     <img src="images/icon-calender.svg" alt="Calender" />
-                    <p>25 Dec, 2025</p>
+                    <p>30 Juli, 2024</p>
                   </div>
                 </div>
                 <h4 class="ek tj ml il kk wm xl eq lb">
-                  <a href="blog-single.html">Tips to quickly improve your coding speed.</a>
-                </h4>
-              </div>
-            </div>
-
-            <!-- Blog Item -->
-            <div class="animate_top sg vk rm xm">
-              <div class="c rc i z-1 pg">
-                <img class="w-full" src="images/blog-01.png" alt="Blog" />
-
-                <div
-                  class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10"
-                >
-                  <a href="./blog-single.html" class="vc ek rg lk gh sl ml il gi hi"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-
-              <div class="yh">
-                <div class="tc uf wf ag jq">
-                  <div class="tc wf ag">
-                    <img src="images/icon-man.svg" alt="User" />
-                    <p>Musharof Chy</p>
-                  </div>
-                  <div class="tc wf ag">
-                    <img src="images/icon-calender.svg" alt="Calender" />
-                    <p>25 Dec, 2025</p>
-                  </div>
-                </div>
-                <h4 class="ek tj ml il kk wm xl eq lb">
-                  <a href="blog-single.html">Free advertising for your online business</a>
-                </h4>
-              </div>
-            </div>
-
-            <!-- Blog Item -->
-            <div class="animate_top sg vk rm xm">
-              <div class="c rc i z-1 pg">
-                <img class="w-full" src="images/blog-02.png" alt="Blog" />
-
-                <div
-                  class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10"
-                >
-                  <a href="./blog-single.html" class="vc ek rg lk gh sl ml il gi hi"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-
-              <div class="yh">
-                <div class="tc uf wf ag jq">
-                  <div class="tc wf ag">
-                    <img src="images/icon-man.svg" alt="User" />
-                    <p>Musharof Chy</p>
-                  </div>
-                  <div class="tc wf ag">
-                    <img src="images/icon-calender.svg" alt="Calender" />
-                    <p>25 Dec, 2025</p>
-                  </div>
-                </div>
-                <h4 class="ek tj ml il kk wm xl eq lb">
-                  <a href="blog-single.html">9 simple ways to improve your design skills</a>
-                </h4>
-              </div>
-            </div>
-
-            <!-- Blog Item -->
-            <div class="animate_top sg vk rm xm">
-              <div class="c rc i z-1 pg">
-                <img class="w-full" src="images/blog-03.png" alt="Blog" />
-
-                <div
-                  class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10"
-                >
-                  <a href="./blog-single.html" class="vc ek rg lk gh sl ml il gi hi"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-
-              <div class="yh">
-                <div class="tc uf wf ag jq">
-                  <div class="tc wf ag">
-                    <img src="images/icon-man.svg" alt="User" />
-                    <p>Musharof Chy</p>
-                  </div>
-                  <div class="tc wf ag">
-                    <img src="images/icon-calender.svg" alt="Calender" />
-                    <p>25 Dec, 2025</p>
-                  </div>
-                </div>
-                <h4 class="ek tj ml il kk wm xl eq lb">
-                  <a href="blog-single.html">Tips to quickly improve your coding speed.</a>
+                  <a href="blog-single.html">Butuh Bantuan WiFi? Ini Daftar Kontak CS IndiHome yang Bisa Dihubungi</a>
                 </h4>
               </div>
             </div>
           </div>
+        </div>
 
           <!-- Pagination -->
           <div class="mb lo bq i ua">
@@ -317,39 +200,7 @@
                     2
                   </a>
                 </li>
-                <li>
-                  <a
-                    class="c tc wf xf wd in zc hn rg uj fo wk xm ml il hh rm tl zm yl an"
-                    href="#"
-                  >
-                    3
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="c tc wf xf wd in zc hn rg uj fo wk xm ml il hh rm tl zm yl an"
-                    href="#"
-                  >
-                    4
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="c tc wf xf wd in zc hn rg uj fo wk xm ml il hh rm tl zm yl an"
-                    href="#"
-                  >
-                    ...
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="c tc wf xf wd in zc hn rg uj fo wk xm ml il hh rm tl zm yl an"
-                    href="#"
-                  >
-                    12
-                  </a>
-                </li>
-                <li>
+                
                   <a
                     class="c tc wf xf wd in zc hn rg uj fo wk xm ml il hh rm tl zm yl an"
                     href="#"
@@ -369,28 +220,28 @@
 
       <!-- ===== CTA Start ===== -->
       <section class="i pg gh ji">
-  <!-- Bg Shape -->
-  <img class="h p q" src="images/shape-16.svg" alt="Bg Shape" />
-
-  <div class="bb ye i z-10 ki xn dr">
-    <div class="tc uf sn tn un gg">
-      <div class="animate_left to/2">
-        <h2 class="fk vj zp pr lk ac">
-            Join with 5000+ Startups Growing with Base.
-        </h2>
-        <p class="lk">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur leo. Ut venenatis rhoncus.
-        </p>
-      </div>
-      <div class="animate_right bf">
-        <a href="#" class="vc ek kk hh rg ol il cm gi hi">
-            Get Started Now
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
+        <!-- Bg Shape -->
+        <img class="h p q" src="images/shape-16.svg" alt="Bg Shape" />
+      
+        <div class="bb ye i z-10 ki xn dr">
+          <div class="tc uf sn tn un gg">
+            <div class="animate_left to/2">
+              <h2 class="fk vj zp pr lk ac">
+                Bergabunglah dengan 10.000+ Startup yang Berkembang bersama Kami.
+              </h2>
+              <p class="lk">
+                Kualitas adalah prioritas utama kami. Dengan infrastruktur yang canggih dan layanan pelanggan yang responsif, kami memberikan jaminan kualitas terbaik untuk koneksi internet Anda. Jadikan bisnis Anda lebih efisien dengan layanan kami.
+              </p>
+            </div>
+            <div class="animate_right bf">
+              <a href="#" class="vc ek kk hh rg ol il cm gi hi">
+                  Berlangganan Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <!-- ===== CTA End ===== -->
     </main>
     <!-- ===== Footer Start ===== -->
@@ -402,10 +253,10 @@
         <div class="animate_top zd/2 to/4">
           <a href="index.html">
             <img src="images/logo-light.svg" alt="Logo" class="om" />
-            <img src="images/logo-dark.svg" alt="Logo" class="xc nm" />
+            <img src="images/logo-light.svg" alt="Logo" class="xc nm" />
           </a>
 
-          <p class="lc fb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="lc fb">Solusi Internet Cepat, Berkelas, dan Cerdas untuk Aktivitas Tanpa Batas</p>
 
           <ul class="tc wf cg">
             <li>
@@ -496,10 +347,10 @@
             <h4 class="kk wm tj ec">Services</h4>
 
             <ul>
-              <li><a href="#" class="sc xl vb">Web Development</a></li>
-              <li><a href="#" class="sc xl vb">Graphics Design</a></li>
-              <li><a href="#" class="sc xl vb">Digital Marketing</a></li>
-              <li><a href="#" class="sc xl vb">Ui/Ux Design</a></li>
+              <li><a href="#" class="sc xl vb">Benefit Game</a></li>
+              <li><a href="#" class="sc xl vb">Upgrade Speed</a></li>
+              <li><a href="#" class="sc xl vb">Speed Refreshment</a></li>
+              <li><a href="#" class="sc xl vb">Cloud Storage for IndiHome</a></li>
             </ul>
           </div>
 
@@ -507,10 +358,10 @@
             <h4 class="kk wm tj ec">Support</h4>
 
             <ul>
-              <li><a href="#" class="sc xl vb">Company</a></li>
-              <li><a href="#" class="sc xl vb">Press media</a></li>
-              <li><a href="#" class="sc xl vb">Our Blog</a></li>
-              <li><a href="#" class="sc xl vb">Contact Us</a></li>
+              <li><a href="#" class="sc xl vb">Pengaduan Layanan</a></li>
+              <li><a href="#" class="sc xl vb">Live Chat</a></li>
+              <li><a href="#" class="sc xl vb">Call Center & Email</a></li>
+              <li><a href="#" class="sc xl vb">GraPARI</a></li>
             </ul>
           </div>
 
@@ -560,7 +411,7 @@
       </div>
 
       <div class="animate_top">
-        <p>&copy; 2025 Base. All rights reserved</p>
+        <p>&copy; 2025 . All rights reserved</p>
       </div>
     </div>
     <!-- Footer Bottom -->
